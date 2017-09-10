@@ -1,0 +1,140 @@
+@color: #3e86ce;
+// 清空默认样式
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.header {
+	height: 60px;
+	line-height: 60px;
+	background: @color;
+	color: #fff;
+	.go-back {
+		float: left;
+		font-size: 30px;
+		margin-left: 10px;
+	}
+	.login {
+		float: right;
+		margin-right: 10px;
+	}
+	h1 {
+		font-size: 26px;
+		text-indent: 20px;
+		text-align: center;
+	}
+}
+// list模块
+.list {
+	li {
+		padding: 10px;
+		border-bottom: 1px solid #ccc;
+		img {
+			width: 80px;
+			height: 64px;
+			float: left;
+		}
+		.content {
+			margin-left: 90px;
+			height: 64px;
+		}
+		h3 {
+			font-size: 14px;
+			line-height: 20px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			margin-bottom: 5px;
+		}
+		p {
+			font-size: 12px;
+			line-height: 20px;
+		}
+		.list-comments {
+			float: right;
+		}
+	}
+}
+// 详情页模块
+.detail {
+	color: #333;
+	h1 {
+		line-height: 60px;
+		font-size: 20px;
+		text-align: center;
+		color: #000;
+	}
+	.status {
+		padding: 0 10px;
+		line-height: 30px;
+		font-size: 12px;
+		.detail-comments {
+			float: right;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	.content {
+		padding: 5px 10px;
+		line-height: 30px;
+		font-size: 14px;
+		text-indent: 2em;
+	}
+	.btn {
+		margin: 30px 10px;
+		background: @color;
+		font-size: 16px;
+		color: #fff;
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 8px;
+	}
+}
+
+// 评论页模块
+.comments {
+	.input-box {
+		padding: 30px 20px;
+	}
+	textarea {
+		display: block;
+		width: 100%;
+		padding: 8px 10px;
+		box-sizing: border-box;
+		height: 100px;
+		background: #efefef;
+	}
+	.btn-box {
+		overflow: hidden;
+	}
+	.btn {
+		.detail .btn;
+		padding: 0 15px;
+		float: right;
+		margin: 0 20px 0 0;
+	}
+	ul {
+		padding: 0 10px;
+		color: #333;
+		li {
+			padding: 10px 0;
+			border-bottom: 1px solid #ccc;
+			h3 {
+				font-size: 16px;
+				line-height: 40px;
+				color: #000;
+			}
+			p {
+				font-size: 14px;
+				line-height: 24px;
+			}
+			span {
+				font-size: 14px;
+				line-height: 30px;
+			}
+		}
+	}
+}
